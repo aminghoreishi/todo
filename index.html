@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gradient-to-t from-blue-900 to-black min-h-svh ">
+    <div class="container mx-auto ">
+        <div class="flex justify-center min-h-svh items-center">
+
+            <div class="flex flex-col gap-y-5 w-full ">
+                <div class="w-full">
+                    <div class="text-white">
+                        <h1 class="text-[30px]">Add new Todo</h1>
+                        <div class="w-full mt-4">
+                            <input
+                                class="border-0 outline-none input text-black py-2 pl-4 w-full focus:outline-blue-500   rounded-2xl"
+                                type="text">
+                                <p id="p-erorr" class="text-red-700 mt-3 font-bold"></p>
+                        </div>
+                        <div class="flex items-center gap-x-6 mt-4">
+                            <div class="bg-gradient-to-tr from-blue-500 to-white/30 p-2 addtodo rounded-xl transition-colors hover:bg-blue-700">
+                                <button >Add todo</button>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="bg-gradient-to-tr from-red-500 to-white/30 cleratodo p-2 rounded-xl transition-colors hover:bg-red-500">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="grid grid-cols-1  gap-y-5 md:grid-cols-1  lg:grid-cols-3 gap-x-5 alltodo">
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
